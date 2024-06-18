@@ -1,0 +1,1 @@
+A library that uses low level io api to create a MultiFile class that store several identical instances of a file on the hard drive. It allowes for automatic endian conversion to make files portable between systems that use big and little endian
