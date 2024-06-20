@@ -10,13 +10,17 @@
 *   Last Modified: 6/20/24
 */
 
-
+#include <bit>
 #include "endian_conversions.h"
 
 
 namespace mz {
 
     namespace endian {
+
+        static constexpr auto stream_endian{ std::endian::little };
+        static constexpr auto native_endian{ std::endian::native };
+        static constexpr bool endian_mismatch{ native_endian != stream_endian };
 
         template <typename T>
         concept TrivialType = std::is_trivially_copyable_v<T>;
