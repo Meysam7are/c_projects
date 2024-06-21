@@ -1,7 +1,8 @@
 #ifndef DB_INDEX_MAP_HEADER_FILE
 #define DB_INDEX_MAP_HEADER_FILE
 #pragma once
-#include "db_config.h"
+
+#include <map>
 #include "time_conversions.h"
 #include "db_concepts.h"
 
